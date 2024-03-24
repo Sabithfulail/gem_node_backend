@@ -1,7 +1,7 @@
 const Registration = require('../models/Registration');
 
 class RegistrationController {
-    async register(req, res) {
+    async registration(req, res) {
         try {
             const { customerId, customerName, customerAddress, customerEmail, customerContactNumber, password } = req.body;
 

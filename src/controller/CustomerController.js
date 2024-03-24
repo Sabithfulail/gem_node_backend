@@ -27,7 +27,7 @@ class CustomerController {
     
         const updateData = req.body;
 
-        Customer.findOneAndUpdate({ customerId: customerId}, updateData, { new: true })
+        Customer.replaceOne({ customerId: customerId}, updateData, { new: true })
             .then((updatedCustomer) => {
                 if (!updatedCustomer) {
                     return res.status(404).json({

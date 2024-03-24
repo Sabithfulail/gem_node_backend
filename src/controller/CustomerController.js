@@ -13,7 +13,7 @@ class CustomerController {
     
     }
 
-    
+     
     saveCustomer = async(req, res) => {
         console.log("Save Customer Req : ", req.body);
         const data = await Customer.create(req.body);

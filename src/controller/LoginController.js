@@ -22,7 +22,6 @@ class LoginController {
             //     console.log('Invalid password');
             //     return res.status(400).json({ message: 'Invalid email or password' });
             // }
-
             console.log('User logged in successfully');
             res.send("Customer Logged in Successfully!");
         } catch (error) {

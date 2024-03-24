@@ -12,5 +12,5 @@ router.use(`${url_prefix}/items`, new ItemRoutes().getRouter());
 router.use(`${url_prefix}/orders`, new OrderRoutes().getRouter);
 //login api created
 router.use(`${url_prefix}/logins`, new LoginRoutes().getRouter); // Mount the LoginRoutes
-router.use(`${url_prefix}/registration`, new RegistrationRoutes().getRouter); // Mount the LoginRoutes
+router.use(`${url_prefix}/registration`, new RegistrationRoutes().getRouter); // Mount the RegistrationRoutes
 module.exports = router; 

@@ -3,8 +3,9 @@ const Login = require('../models/Login');
 class LoginController {
     login = async(req, res) => {
         try {
+            // console.log('Request body : ',req);
             // const { email, password } = req.body;
-            const email = req.params.email;
+            const email = req.params.customerEmail;
             const password = req.params.password;
             console.log('Received login request:', email, password);
 

@@ -3,6 +3,7 @@ const Registration = require('../models/Registration');
 class RegistrationController {
     async registration(req, res) {
         try {
+            console.log("in to the RegistrationController");
             const { customerId, customerName, customerAddress, customerEmail, customerContactNumber, password } = req.body;
 
             // Check if user with the same email already exists

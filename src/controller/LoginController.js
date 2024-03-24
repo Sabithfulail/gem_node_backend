@@ -1,10 +1,11 @@
 const Login = require('../models/Login');
 
 class LoginController {
-    async login(req, res) {
+    login = async(req, res) => {
         try {
-            const { email, password } = req.body;
-
+            // const { email, password } = req.body;
+            const email = req.params.email;
+            const password = req.params.password;
             console.log('Received login request:', email, password);
 
             // Check if user exists

@@ -68,7 +68,7 @@ class PostController {
     }
 
     updatePost = async(req, res) => {
-        const postId = req.params.uId;
+        const postId = req.params.uid;
         console.log('req post ID : ', postId);
     
         const updateData = req.body;
@@ -88,7 +88,7 @@ class PostController {
     }
 
     deletePost = async(req, res) => {
-        const postId = req.params.uId;
+        const postId = req.params.uid;
         console.log("req delete post ID : ", postId);
 
         Post.findOneAndDelete({ uid: postId })

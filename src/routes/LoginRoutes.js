@@ -1,22 +1,22 @@
-const Login = require('../models/Login');
-const LoginController = require("../controller/LoginController");
-const express = require("express");
+// const Login = require('../models/Login');
+// const LoginController = require("../controller/LoginController");
+// const express = require("express");
 
-class LoginRoutes {
-    loginController = new LoginController();
-    router = express.Router();
+// class LoginRoutes {
+//     loginController = new LoginController();
+//     router = express.Router();
 
-    constructor() {
-        this.configRoutes();
-    }
+//     constructor() {
+//         this.configRoutes();
+//     }
 
-    configRoutes = () => {
-        this.router.post('/login', this.loginController.login);
-    };
+//     configRoutes = () => {
+//         this.router.post('/login', this.loginController.login);
+//     };
 
-    getRouter = () => {
-        return this.router;
-    };
-}
+//     getRouter = () => {
+//         return this.router;
+//     };
+// }
 
-module.exports = LoginRoutes;
+// module.exports = LoginRoutes;

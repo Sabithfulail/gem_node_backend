@@ -12,6 +12,7 @@ class RegistrationRoutes {
 
     configRoutes = () => {
         this.router.post('/registration', this.registrationController.registration);
+        this.router.post('/login', this.registrationController.login);  //testing purpose
     };
 
     getRouter = () => {
